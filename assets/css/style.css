@@ -2111,6 +2111,11 @@ background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   color: #000000;
 }
 
+.formatura {
+  display: grid;
+  align-items: center;
+}
+
 .formatura-button {
   background-color:#F0EAD9;
 }
@@ -2119,11 +2124,25 @@ background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   transition: 0.5s;
+  padding: 10px;
 }
 
 .formatura-img:hover {
   filter: blur(5px);
   transform:matrix3d(1.1)
 }
+
+.formatura-text {
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .formatura{
+    display: flex;
+  }
+  .formatura-img{
+    width: 70%;
+  }
+  }
